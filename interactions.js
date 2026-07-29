@@ -2,6 +2,14 @@
   if (window.__shahmatInteractions) return;
   window.__shahmatInteractions = true;
 
+  const resetTrainerCarousel = () => {
+    const carousel = document.querySelector("[data-reset-scroll]");
+    if (carousel) carousel.scrollTo({ left: 0, behavior: "auto" });
+  };
+
+  requestAnimationFrame(() => requestAnimationFrame(resetTrainerCarousel));
+  window.addEventListener("pageshow", resetTrainerCarousel);
+
   const closeMenu = (menu) => {
     const toggle = menu.querySelector("[data-menu-toggle]");
     menu.classList.remove("open");
