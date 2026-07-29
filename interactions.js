@@ -4,11 +4,19 @@
 
   const resetTrainerCarousel = () => {
     const carousel = document.querySelector("[data-reset-scroll]");
-    if (carousel) carousel.scrollTo({ left: 0, behavior: "auto" });
+    if (!carousel) return;
+    carousel.scrollLeft = 0;
+    carousel.scrollTo({ left: 0, behavior: "auto" });
   };
 
-  requestAnimationFrame(() => requestAnimationFrame(resetTrainerCarousel));
-  window.addEventListener("pageshow", resetTrainerCarousel);
+  const scheduleTrainerReset = () => {
+    requestAnimationFrame(() => requestAnimationFrame(resetTrainerCarousel));
+  };
+
+  scheduleTrainerReset();
+  window.addEventListener("load", scheduleTrainerReset);
+  window.addEventListener("pageshow", scheduleTrainerReset);
+  document.fonts?.ready.then(scheduleTrainerReset);
 
   const closeMenu = (menu) => {
     const toggle = menu.querySelector("[data-menu-toggle]");

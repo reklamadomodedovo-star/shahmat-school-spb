@@ -1,2 +1,2 @@
-:HL["/shahmat-school-spb/_next/static/chunks/01usd-rb95zie.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"YH-WKxxsC8wAQNncNGoAb"}
+:HL["/shahmat-school-spb/_next/static/chunks/3vs5h5douf2-1.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"47o5pyHUx8mGSQpClHaQ9"}
